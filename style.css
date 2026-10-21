@@ -1,0 +1,421 @@
+
+/* Removes Margin, Padding and text decoration*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Sets layout and correct font for every page */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Background image for Home, About and Contact Pages */
+.lake-wanaka-tree {
+    background-image: url(Images/lake-wanaka-tree.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: top;
+    background-size: cover;
+}
+
+/* Background image for the Upper North Island page */
+.upper-north-island {
+    background-image: url(Images/upper-north-island.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: top;
+}
+
+/* Background image for the Central North Island page */
+.central-north-island {
+    background-image: url(Images/central-north-island.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: top;
+}
+
+/* Background image for the South Island page */
+.south-island {
+    background-image: url(Images/south-island.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: top;
+    background-size: contain;
+}
+
+/* Style and positiong for Logo and Navbar */
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: hsla(0, 0%, 0%, 0%);
+}
+
+/* Styling for Logo */
+header .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    color: rgb(250, 248, 248);
+    transition: 0.3s;
+}
+
+/* Changes Logo hover to Black */
+header .logo:hover {
+    font-weight: bolder;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+
+/* Removes Bullet points from Navbar */
+header .nav ul {
+    list-style: none;
+}
+
+/* Positioning for navbar items */
+header .nav ul li {
+    position: relative;
+    float: left;
+}
+
+/* Styling for Navbar links */
+header .nav ul li a {
+    font-size: 22px;
+    padding: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    display: block;
+}
+
+/* Underlines Navbar links when hovered */
+header .nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 0, 0);
+    text-decoration-thickness: 4px;
+}
+
+/* Styling for Main Title text on Home Page */
+.invisible-item {
+    height: 90vh;
+    color: aliceblue;
+    font-family: "Times New Roman", serif;
+    text-align: center;
+    font-size: 67px;
+}
+
+/* Adds white-blue background color for block containing 3 regions on home page */
+.text-block {
+    background-color: hsl(210, 57%, 90%);
+    padding-top: 20px;
+}
+
+/* Arranges Region Collums to be in a row with a gap */
+.collums {
+    display: flex;
+    flex-direction: row;
+    gap: 9.5%;
+    justify-content: space-evenly;
+}
+
+/* Size, Margin, Border raduis, and hover transition time for home page region images */
+.collums img {
+    width: 50vh;
+    margin: 10px 20px 0px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+/* Darkens region images on the home page when Hovered */
+.collums img:hover {
+    filter: brightness(70%);
+}
+
+/* Potitioning and Styling for headings over regions on home page */
+.collums h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+/* Underlines region headings when hovered */
+.collums h2:hover {
+    text-decoration: underline;
+}
+
+/* Styling and Positioning for smaller headings under region images on Home page */
+.collums h3 {
+    text-align: left;
+    margin: 2% 0px 10px 5%;
+    font-size: 125%;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+.first-collum .second-collum .third-collum {
+    display: flex;
+    padding: 20px;
+}
+
+/* Styles and Arranges items on the About Page */
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(215, 230, 244, 0.575);
+}
+
+/* Styling for the text on the About Page */
+.about p {
+    font-size: 25px;
+    padding: 5px 60px;
+}
+
+/* Styling for the image on the About Page */
+.about img {
+    border-radius: 10px;
+    border: solid 15px rgb(27, 27, 27);
+    margin: 10px;
+    width: 30%;
+}
+
+/* Adds invisible block to make Footer look correct */
+.invisible-block-for-footer {
+    min-height: 20vh;
+    width: 100%;
+}
+
+/* Main contact flex container, positioning for form and email and background color. */
+.contact-main {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.555);
+    justify-content: center;
+    padding: 20px;
+}
+
+/* arranges inputs in form vertically and positions the form. */
+form {
+    height: 100vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 10% 50px;
+}
+
+/* Styling and Positioning for email section */
+.email-me {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    width: auto;
+    margin: 50px 10% 50px;
+    color: white;
+    text-align: center;
+}
+
+/* Styling for Email adress*/
+.email-me a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Underlines email adress when hovered over */
+.email-me a:hover {
+    text-decoration: underline;
+}
+
+/* Margin above the top input*/
+.top {
+    margin-top: 3%;
+}
+
+/* Displays the Labels sepearetly and cleanly */
+label {
+    display: block;
+    color: white;
+}
+
+/* Styling for text input */
+input[type=text] {
+    width: 250px;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border-left: rgba(0, 0, 0, 0);
+    border-right: rgba(0, 0, 0, 0);
+    border-top: rgba(0, 0, 0, 0);
+    border-bottom: solid 3px white;
+}
+
+/* Removes outline when textbox is selected */
+input[type=text]:focus {
+    outline: none;
+}
+
+/* Styling for the message input */
+#message {
+    width: 250px;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border-left: rgba(0, 0, 0, 0);
+    border-right: rgba(0, 0, 0, 0);
+    border-top: rgba(0, 0, 0, 0);
+    border-bottom: solid 3px white;
+    color: white;
+}
+
+/* Removes outline when message box is selected*/
+#message:focus {
+    outline: none;
+}
+
+/* Styling for email input */
+input[type=email] {
+    width: 250px;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border-left: rgba(0, 0, 0, 0);
+    border-right: rgba(0, 0, 0, 0);
+    border-top: rgba(0, 0, 0, 0);
+    border-bottom: solid 3px white;
+    color: white;
+}
+
+/* Removes outline when email input box is selected */
+input[type=email]:focus {
+    outline: none;
+}
+
+/* Sizing for reset button */
+input[type=reset] {
+    width: 255px;
+    height: 20px;
+}
+
+/* Styling and Sizing for submit button */
+button[type=submit] {
+    width: 255px;
+    height: 35px;
+    margin-top: 4px;
+    color: white;
+    background-color: hsl(120, 60%, 35%);
+    border-radius: 7px;
+}
+
+/* Changes submit button color when hoevered over */
+button[type=submit]:hover {
+    background-color: hsl(120, 60%, 40%);
+}
+
+/* Sizing for images in each region page */
+.region-section img {
+    width: 30%;
+}
+
+/* Positioning and background color for each region page text and images block */
+.region-text-block {
+    margin-top: 320px;
+    background-color: hsl(210, 57%, 90%);
+}
+
+/* Font size for the  paragraphs for  each location */
+.region-text-block p {
+    font-size: 20px;
+}
+
+/* Styling and positioning for the headers for each location */
+.region-header {
+    color: aliceblue;
+    font-family: "Times New Roman", serif;
+    text-align: center;
+    font-size: 67px;
+}
+
+/* Arranges the left collums in each region page and created flex container*/
+.region-collum-left {
+    display: flex;
+    flex-direction: row;
+    padding-top: 35px;
+    margin-left: 20px;
+    font-size: large;
+}
+
+/* Styling for Images in the left collums of each region page */
+.region-collum-left img {
+    border-radius: 9px;
+    width: 75vh;
+    padding-bottom: 20px;
+    margin-right: 30px;
+}
+
+/* Arranges the right collums in each region page and created flex container*/
+.region-collum-right {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 20px;
+    font-size: large;
+}
+
+/* Styling for Images in the left collums of each region page */
+.region-collum-right img {
+    border-radius: 9px;
+    width: 75vh;
+    padding-bottom: 20px;
+    margin-left: 30px;
+}
+
+/* positioning for the headings and paragraphs for each location */
+.region-collum-text {
+    margin: 0px auto 0px auto;
+    padding: 10px;
+}
+
+/* Centeres and positions the headings for each location */
+.region-collum-text h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* Styling for the footer and created vertical flexbox container */
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(27, 27, 27);
+    color: azure;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Styling for Footer hyperlinks */
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Underlines footer hyper links when hovered over */
+footer a:hover {
+    text-decoration: underline;
+}
